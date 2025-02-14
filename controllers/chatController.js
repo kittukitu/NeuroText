@@ -2,9 +2,9 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 
 const chatController = async (req, res) => {
-    const { topic, tone, audience, length, language } = req.body;
+    const { topic, tone, audience, length} = req.body;
 
-    if (!topic || !tone || !audience || !length || !language) {
+    if (!topic || !tone || !audience || !length ) {
         return res.render('index', {
             response: '❌ Please fill in all fields to generate content.',
         });
