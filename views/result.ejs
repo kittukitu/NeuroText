@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Story - StoryWeaver</title>
+    <title>NeuroText Generator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -27,8 +27,8 @@
     <nav class="fixed top-0 left-0 right-0 z-10 w-full bg-white shadow-md bg-opacity-90">
         <div class="container flex items-center justify-between px-6 py-4 mx-auto">
             <h1 class="text-2xl font-bold text-purple-600 flex items-center">
-                <i class="fa-solid fa-feather-alt mr-2" style="color: #8B5CF6;"></i> StoryWeaver
-            </h1>            
+                <i class="fa-solid fa-feather-alt mr-2 text-purple-500"></i> NeuroText
+            </h1>         
             <div class="space-x-4">
                 <a href="/index" class="text-blue-800 hover:text-teal-600 transition duration-300">
                     <i class="fa-solid fa-house mr-1" style="color: #3498db;"></i> Home
@@ -53,7 +53,7 @@
 <div class="bg-white shadow-lg rounded-lg p-8 max-w-4xl w-full h-auto md:h-[600px]">
     <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Your AI-Generated Story</h1>
     <div class="bg-gray-50 p-6 rounded-lg border border-gray-300 overflow-auto max-h-[500px]">
-        <p class="text-gray-700 whitespace-pre-line"><%= story %></p>
+        <p class="text-gray-700 whitespace-pre-line"><%= content %></p>
     </div>
     <div class="mt-6 flex justify-between">
         <a href="/" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">Generate Another Story</a>

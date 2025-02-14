@@ -2,11 +2,11 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 
 const chatController = async (req, res) => {
-    const { genre, setting, protagonist, theme, writingStyle } = req.body;
+    const { topic, tone, audience, length, language } = req.body;
 
-    if (!genre || !setting || !protagonist || !theme || !writingStyle) {
+    if (!topic || !tone || !audience || !length || !language) {
         return res.render('index', {
-            response: '❌ Please fill in all fields to create your story.',
+            response: '❌ Please fill in all fields to generate content.',
         });
     }
 
@@ -18,7 +18,7 @@ const chatController = async (req, res) => {
     }
 
     const url = 'https://chatgpt4-ai-chatbot.p.rapidapi.com/ask';
-    const query = `Generate a ${genre} story set in ${setting}. The protagonist is ${protagonist}, and the story revolves around ${theme}. Write it in a ${writingStyle} style.`;
+    const query = `Generate a ${length} article on "${topic}" in english. The tone should be ${tone}, and it should be tailored for a ${audience} audience.`;
 
     const options = {
         method: 'POST',
@@ -36,16 +36,16 @@ const chatController = async (req, res) => {
         if (!response.ok) {
             console.error(`🚨 API Error: ${response.status} - ${response.statusText}`);
             return res.render('index', {
-                response: '⚠️ Failed to generate the story. Please try again later.',
+                response: '⚠️ Failed to generate content. Please try again later.',
             });
         }
 
         const result = await response.json();
         console.log("🔹 API Response:", result);
 
-        const story = result.response || result.result || "⚠️ No response from the AI.";
+        const content = result.response || result.result || "⚠️ No response from the AI.";
 
-        res.render('result', { story });
+        res.render('result', { content });
 
     } catch (error) {
         console.error("❌ Fetch Error:", error);

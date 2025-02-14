@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About StoryWeaver</title>
+    <title>About NeuroText</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script> 
@@ -15,63 +15,62 @@
     <!-- GSAP Animation Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen py-8 font-sans bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600">
+<body class="flex flex-col items-center justify-center min-h-screen py-8 font-sans bg-gradient-to-r from-purple-400 via-pink-500 to-red-600">
 
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-10 w-full bg-white shadow-md bg-opacity-90">
         <div class="container flex items-center justify-between px-6 py-4 mx-auto">
             <h1 class="text-2xl font-bold text-purple-600 flex items-center">
-                <i class="fa-solid fa-feather-alt mr-2" style="color: #8B5CF6;"></i> StoryWeaver
+                <i class="fa-solid fa-feather-alt mr-2" style="color: #8B5CF6;"></i>NeuroText
             </h1>            
             <div class="space-x-4">
-                <a href="/index" class="text-blue-800 hover:text-indigo-600 transition duration-300"><i class="fa-solid fa-house mr-1"></i> Home</a>
-                <a href="/profile" class="text-gray-800 hover:text-indigo-600 transition duration-300"><i class="fa-solid fa-user mr-1"></i> Profile</a>
-                <a href="/courses" class="text-gray-800 hover:text-indigo-600 transition duration-300"><i class="fa-solid fa-book-open mr-1"></i> Courses</a>
-                <a href="/about" class="text-gray-800 hover:text-indigo-600 transition duration-300"><i class="fa-solid fa-info-circle mr-1"></i> About</a>
-                <a href="/login" class="text-gray-800 hover:text-indigo-600 transition duration-300"><i class="fa-solid fa-sign-out-alt mr-1"></i> Logout</a>
+                <a href="/index" class="text-blue-800 hover:text-pink-600 transition duration-300"><i class="fa-solid fa-house mr-1"></i> Home</a>
+                <a href="/profile" class="text-gray-800 hover:text-pink-600 transition duration-300"><i class="fa-solid fa-user mr-1"></i> Profile</a>
+                <a href="/about" class="text-gray-800 hover:text-pink-600 transition duration-300"><i class="fa-solid fa-info-circle mr-1"></i> About</a>
+                <a href="/login" class="text-gray-800 hover:text-pink-600 transition duration-300"><i class="fa-solid fa-sign-out-alt mr-1"></i> Logout</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="w-full px-8 py-24 mt-16 text-center text-white bg-cover bg-center bg-[url('/images/coursecraft-bg.jpg')]">
-        <h1 class="mb-6 text-5xl font-extrabold">About <span class="text-yellow-300">CourseCraft</span></h1>
-        <p class="text-lg max-w-2xl mx-auto">Your AI-powered curriculum selector for personalized learning journeys.</p>
+    <section class="w-full px-8 py-24 mt-16 text-center text-white bg-cover bg-center bg-[url('/images/neurotext-bg.jpg')]">
+        <h1 class="mb-6 text-5xl font-extrabold">About <span class="text-yellow-300">NeuroText</span></h1>
+        <p class="text-lg max-w-2xl mx-auto">Your AI-powered content creation hub for generating high-quality, tailored writing effortlessly.</p>
     </section>
 
     <!-- Our Vision -->
     <section class="container p-8 mx-auto bg-white rounded-lg shadow-lg mt-8">
-        <h2 class="mb-6 text-3xl font-bold text-indigo-600 text-center">Our Vision</h2>
-        <p class="text-gray-600 text-center max-w-3xl mx-auto">CourseCraft is designed to revolutionize the learning experience by providing AI-driven recommendations, dynamic curriculum paths, and adaptive learning strategies tailored to your unique skills and interests.</p>
+        <h2 class="mb-6 text-3xl font-bold text-pink-600 text-center">Our Vision</h2>
+        <p class="text-gray-600 text-center max-w-3xl mx-auto">NeuroText aims to revolutionize content creation by leveraging AI to craft engaging, unique, and highly optimized written material for any purpose.</p>
     </section>
 
     <!-- Key Features -->
     <section class="container p-8 mx-auto bg-white rounded-lg shadow-lg mt-8">
-        <h2 class="mb-6 text-3xl font-bold text-indigo-600 text-center">Key Features</h2>
+        <h2 class="mb-6 text-3xl font-bold text-pink-600 text-center">Key Features</h2>
         <div class="grid gap-6 md:grid-cols-3">
             <div class="p-6 bg-gray-100 rounded-lg shadow-md text-center">
-                <h3 class="text-xl font-semibold">📚 Personalized Course Paths</h3>
-                <p class="text-gray-600">Tailored learning recommendations based on your goals.</p>
+                <h3 class="text-xl font-semibold">📝 AI-Generated Content</h3>
+                <p class="text-gray-600">Create blog posts, articles, and marketing copy with AI assistance.</p>
             </div>
             <div class="p-6 bg-gray-100 rounded-lg shadow-md text-center">
-                <h3 class="text-xl font-semibold">🎯 AI-Powered Skill Assessment</h3>
-                <p class="text-gray-600">Get real-time insights into your progress and strengths.</p>
+                <h3 class="text-xl font-semibold">🎨 Adaptive Writing Styles</h3>
+                <p class="text-gray-600">Customize tone and style to match your audience.</p>
             </div>
             <div class="p-6 bg-gray-100 rounded-lg shadow-md text-center">
-                <h3 class="text-xl font-semibold">⏳ Adaptive Learning Strategies</h3>
-                <p class="text-gray-600">Modify courses dynamically based on your pace and understanding.</p>
+                <h3 class="text-xl font-semibold">🌎 Multi-Language Support</h3>
+                <p class="text-gray-600">Generate content in multiple languages seamlessly.</p>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose CourseCraft? -->
+    <!-- Why Choose NeuroText? -->
     <section class="container p-8 mx-auto bg-white rounded-lg shadow-lg mt-8">
-        <h2 class="mb-6 text-3xl font-bold text-indigo-600 text-center">Why Choose CourseCraft?</h2>
+        <h2 class="mb-6 text-3xl font-bold text-pink-600 text-center">Why Choose NeuroText?</h2>
         <ul class="text-gray-600 space-y-2 max-w-2xl mx-auto">
-            <li>✔️ AI-driven course recommendations</li>
-            <li>✔️ Interactive and engaging learning pathways</li>
-            <li>✔️ Seamless progress tracking and feedback</li>
-            <li>✔️ Collaboration with educators and mentors</li>
+            <li>✔️ AI-powered content generation</li>
+            <li>✔️ SEO-optimized text creation</li>
+            <li>✔️ User-friendly and intuitive interface</li>
+            <li>✔️ Save time while improving content quality</li>
         </ul>
     </section>
 
