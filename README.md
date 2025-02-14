@@ -3,3 +3,4 @@
 # BrainSync
 # CourseCraft
 # StoryWeaver
+# NeuroText
